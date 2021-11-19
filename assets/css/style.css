@@ -25,9 +25,39 @@ html {
 #header {
     height: 46px;
     background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; /* note */
 }
+
+#header .search-btn{
+    float: right;
+    cursor: pointer; /* thay đổi hình con trỏ chuột */
+}
+
+#header .search-btn:hover{
+    background-color: #f44336;
+}
+
+#header .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+    padding: 0 21px;
+}
+
+#nav{
+    display: inline-block;
+}
+
 #nav, .subnav{
     list-style: none; /* bỏ dấu trước list */
+}
+
+#nav .nav-arrow-down{
+    font-size: 14px;
 }
 
 #nav > li{
@@ -78,10 +108,31 @@ html {
 }
 
 #slider {
-   
+   position: relative;
+   margin-top: 46px;
+   padding-top: 50%;
+   background: url('/webf8/assets/img/slider/slider1.jpg') top center / cover no-repeat;
 }
-#content {
 
+#slider .text-content{
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+#slider .text-heading{
+    font-weight: 500px;
+    font-size: 24px;
+}
+#slider .text-description{
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+#content {
+ height: 1000px;
+ background-color: #ccc;
 }
 #footer {
 
